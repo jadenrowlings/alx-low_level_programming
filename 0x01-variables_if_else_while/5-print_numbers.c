@@ -9,7 +9,7 @@
 int main(void)
 {
 int i;
-for (n = '0'; n <= '10'; n++)
+for (n = '0'; i <= '10'; i++)
 {
 	prinf("%i", i);
 }
