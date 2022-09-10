@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - printing two digit numbers from 01-89 with commas and space between them
+ * main - entry point
  * Description: using the main function
  * Return: 0
  */
