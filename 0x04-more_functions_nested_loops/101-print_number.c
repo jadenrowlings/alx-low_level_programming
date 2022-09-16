@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-*print_number - Prints a number
+* print_number - Prints a number
 * @n: The number to print
 */
 
