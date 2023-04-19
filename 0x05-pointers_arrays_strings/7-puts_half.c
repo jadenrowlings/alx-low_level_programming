@@ -1,31 +1,34 @@
+#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
-#define MAX_SIZE 100
-
-int sum(int arr[], int n);
-int main(void);
-
-int sum(int arr[], int n)
+/**
+ * puts_half - prints the second half of a string, followed by a new line.
+ * @str: The string to be printed.
+ *
+ * Return: void.
+ */
+void puts_half(char *str)
 {
-    int i, sum = 0;
-    for (i = 0; i < n; i++) {
-        sum += arr[i];
-    }
-    return sum;
-}
+    int len = 0, i;
 
-int main(void)
-{
-    int i, n, arr[MAX_SIZE], sum_arr;
-    printf("Enter the number of elements in the array: ");
-    scanf("%d", &n);
-    printf("Enter %d elements: ", n);
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    while (str[len] != '\0')
+    {
+        len++;
     }
-    sum_arr = sum(arr, n);
-    printf("Sum of array elements = %d\n", sum_arr);
-    return EXIT_SUCCESS;
+
+    if (len % 2 == 0)
+    {
+        i = len / 2;
+    }
+    else
+    {
+        i = (len + 1) / 2;
+    }
+
+    for (; i < len; i++)
+    {
+        _putchar(str[i]);
+    }
+    _putchar('\n');
 }
 
