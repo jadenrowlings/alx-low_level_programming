@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
- * _strlen - Returns the length of a string.
+ * _strcpy - copies the string pointed to by src, including the terminating null byte, to the buffer pointed to by dest
+ * @dest: pointer to the buffer to copy the string to
+ * @src: pointer to the string to copy
  *
- * @s: The string to be measured.
- *
- * Return: The length of the string.
+ * Return: pointer to dest
  */
-
-int _strlen(char *s)
+char *_strcpy(char *dest, char *src)
 {
-  int len = 0;
+    int i = 0;
 
-  while (*s != '\0')
+    while (src[i] != '\0')
     {
-      len++;
-      s++;
+        dest[i] = src[i];
+        i++;
     }
 
-  return (len);
+    dest[i] = '\0';
+
+    return dest;
 }
 
